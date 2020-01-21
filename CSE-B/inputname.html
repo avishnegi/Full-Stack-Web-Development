@@ -3,11 +3,20 @@
 <html>
 <head>
 	<title></title>
-	<script type="text/javascript"></script>
+
 </head>
 <body>
-	First name <input  id ="First " type ="text " placeholder="enter firstname"><br>
-    Last name <input  id = "Last" type= "text " placeholder="enter lastname"><br>
-    <input type="submit" value=" Register ">
+	First name <input  id ="First" type ="text" placeholder="enter firstname"><br>
+    Last name <input  id = "Last" type= "text" placeholder="enter lastname"><br>
+     <input id='btn' type="submit">
+    <script type="text/javascript">
+    	document.getElementById('btn').onclick =
+    	function(){
+    		firstname=document.getElementById('First').value;
+	        lastname=document.getElementById('Last').value;
+	        
+	        console.log(firstname +' '+lastname);
+    	}
+	</script>
 </body>
 </html>
