@@ -4,7 +4,8 @@ $username = 'root';
 $password = '';
 $databaseName = 'cseb';
 
-if(mysqli_connect($hostname, $username,$password,$databaseName)){
+$conn = mysqli_connect($hostname, $username,$password,$databaseName);
+if($conn){	
     echo 'connection successful';
 }
 else
