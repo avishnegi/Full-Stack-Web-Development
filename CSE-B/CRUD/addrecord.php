@@ -7,7 +7,7 @@ include('configure.php');
 	<title>Input form</title>
 </head>
 <body>
-   <form action="details.php" method="post">
+   <form action="add.php" method="post">
    	ID: <input type="text" name="id" placeholder="enter ID"><br>
    	Name: <input type="text" name="username"><br>
    	AGE: <input type="text" name="age" placeholder="enter age"><br>
