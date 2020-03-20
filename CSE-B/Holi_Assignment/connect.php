@@ -8,7 +8,7 @@ $conn = mysqli_connect($hostName, $userName, $password, $databaseName);
 if ($conn){
 }
 else{
-    echo "Connection failed!!" + mysqli_connect_error();
+    echo "Connection is failed!!" + mysqli_connect_error();
 }
 if(isset($_POST['btn']))
 {
@@ -25,7 +25,7 @@ if(isset($_POST['btn']))
 	$qt = mysqli_query($conn,$qy);
 	if($qt)
 	{
-		echo "<script>alert('registeration is complete')</script>";
+		echo "<script>alert('Your registeration is complete')</script>";
 		echo"<script>window.open('enterRecord.php','self')</script>";
 	}
 }
